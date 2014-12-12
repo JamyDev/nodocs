@@ -1,0 +1,30 @@
+{
+  "name": "nodocs",
+  "version": "0.0.1",
+  "description": "Utility that gives you commands to look up stuff in the Node API, NPM package list and Mozilla JS API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "napi": "./nodeapi.js",
+    "jsapi": "./jsapi.js",
+    "onpm": "./npm.js"
+  },
+  "keywords": [
+    "commands",
+    "docs",
+    "api",
+    "node",
+    "npm",
+    "js",
+    "mozilla",
+    "global"
+  ],
+  "author": "Jamy Timmermans <me@jamy.be>",
+  "license": "GPL",
+  "dependencies": {
+    "minimist": "^1.1.0",
+    "open": "0.0.5"
+  }
+}
