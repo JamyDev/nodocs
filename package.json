@@ -2,14 +2,15 @@
   "name": "nodocs",
   "version": "0.0.1",
   "description": "Utility that gives you commands to look up stuff in the Node API, NPM package list and Mozilla JS API",
-  "main": "index.js",
+  "main": "./lib/nodeapi.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postInstall": "mkdir docs && node lib/postInstall.js"
   },
   "bin": {
-    "napi": "./nodeapi.js",
-    "jsapi": "./jsapi.js",
-    "onpm": "./npm.js"
+    "napi": "./lib/nodeapi.js",
+    "jsapi": "./lib/jsapi.js",
+    "onpm": "./lib/npm.js"
   },
   "keywords": [
     "commands",
